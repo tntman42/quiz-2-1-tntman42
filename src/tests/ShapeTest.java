@@ -1,8 +1,10 @@
 package tests;
 
-import static org.junit.Assert.*;
-
+import org.junit.Assert;
 import org.junit.Test;
+
+import shapes.Circle;
+import shapes.Square;
 
 public class ShapeTest {
 
@@ -14,7 +16,7 @@ public class ShapeTest {
 	 */
 	@Test
 	public void testCompareTo() {
-		fail("Not yet implemented");
+		
 	}
 
 }

@@ -8,7 +8,10 @@ public class Circle extends Shape {
 	 * below.  Circles cannot have a negative radius.
 	 */
 	public Circle(double radius) throws IllegalArgumentException {
-		// TODO Implement me
+		if (radius <= 0){
+			throw new IllegalArgumentException("You cannot have a radius less than or equal to 0");
+		}
+		this.radius = radius;
 	}
 	
 	/*
@@ -17,5 +20,10 @@ public class Circle extends Shape {
 	
 	public double getRadius() {
 		return radius;
+	}
+
+	@Override
+	public double calculateArea() {
+		return Math.PI * radius * radius;
 	}
 }
