@@ -16,7 +16,10 @@ public class ShapeTest {
 	 */
 	@Test
 	public void testCompareTo() {
-		
+		Assert.assertTrue((new Square(20)).compareTo(new Square(10)) > 0);
+		Assert.assertTrue((new Circle(200)).compareTo(new Circle(10)) > 0);
+		Assert.assertTrue((new Square(50)).compareTo(new Circle(100)) < 0);
+		Assert.assertTrue((new Circle(50)).compareTo(new Square(50)) > 0);
 	}
 
 }
